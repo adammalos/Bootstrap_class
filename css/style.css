@@ -14,14 +14,21 @@ h3 {
     color: #ffffff;
 }
 
+.margin {
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+
 .quem-somos {
     background-color: #0c8aad;
     color: #ffffff;
 }
 
-.margin {
-    padding-top: 15px;
-    padding-bottom: 40px;
+/*quem somos*/
+.q-img {
+    width: 450px; 
+    height: 450px;
+    object-fit: cover;
 }
 
 .parceiros {
@@ -30,8 +37,21 @@ h3 {
 }
 
 .serviços {
+    padding-top: 15px;
+    height: 75px;
     background-color: #1b1b1b;
     color: #ffffff;
+}
+
+/*carousel*/
+.c-item {
+    height: 480px;
+}
+
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
 
 .bg-footer {

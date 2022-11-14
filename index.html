@@ -4,6 +4,7 @@
         <title>Página Teste</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="bootstrapdist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body>
@@ -29,7 +30,7 @@
         <section id="quemsomos">
             <div class="container-fluid quem-somos text-center margin">
                 <h3>Quem somos</h3>
-                <img src="img/teamhands2.jpg" class="rounded-circle" width="450" height="450">
+                <img src="img/teamhands2.jpg" class="rounded-circle q-img">
                 <h4>Um time diverso e comprometido com os resultados!</h4>
             </div>
         </section>
@@ -54,33 +55,48 @@
         </section>
 
         <section id="serviços">
-            <div class="container-fluid text-center margin serviços">
-                <h3 class="margin" >Serviços</h3>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <p>Lorem ipsum dolor sit amet. Aut repellat blanditiis qui quis voluptas aut soluta 
-                                labore et velit dolore aut quaerat iusto et omnis nulla est libero fugiat. </p>
-                            <img src="img/app.jpg" width="100%">
-                        </div>
-                        <div class="col-lg-3">
-                            <p>Lorem ipsum dolor sit amet. Aut repellat blanditiis qui quis voluptas aut soluta 
-                                labore et velit dolore aut quaerat iusto et omnis nulla est libero fugiat. </p>
-                            <img src="img/latop_hands.jpg" width="100%">
-                        </div>
-                        <div class="col-lg-3">
-                            <p>Lorem ipsum dolor sit amet. Aut repellat blanditiis qui quis voluptas aut soluta 
-                                labore et velit dolore aut quaerat iusto et omnis nulla est libero fugiat. </p>
-                            <img src="img/setup.jpg" width="100%">
-                        </div>
-                        <div class="col-lg-3">
-                            <p>Lorem ipsum dolor sit amet. Aut repellat blanditiis qui quis voluptas aut soluta 
-                                labore et velit dolore aut quaerat iusto et omnis nulla est libero fugiat. </p>
-                            <img src="img/laptop.jpg" width="100%">
-                        </div>
-                    </div>
-                </div>
+            <div class="container-fluid text-center serviços">
+                <h3>Serviços</h3>
             </div>
+            <div id="serviços-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active c-item">
+                        <img src="img/app.jpg" class="d-block w-100 c-img" alt="Slide 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-1 fs-1 fw-bolder text-capitalize">Primeiro slide</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                  </div>
+                  <div class="carousel-item c-item">
+                        <img src="img/latop_hands.jpg" class="d-block w-100 c-img" alt="Slide 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-1 fs-1 fw-bolder text-capitalize">Segundo slide</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                  </div>
+                  <div class="carousel-item c-item">
+                        <img src="img/setup.jpg" class="d-block w-100 c-img" alt="Slide 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="display-1 fs-1 fw-bolder text-capitalize">Terceiro slide</h5>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                  </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#serviços-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#serviços-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#serviços-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#serviços-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#serviços-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
         </section>
 
         <footer class="contaiber-fluid text-center bg-footer">
