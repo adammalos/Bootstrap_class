@@ -30,6 +30,7 @@ h3 {
     width: 450px; 
     height: 450px;
     object-fit: cover;
+    border: 2px solid white
 }
 
 .parceiros {
@@ -37,7 +38,7 @@ h3 {
     color: #ffffff;
 }
 
-.serviços {
+.servicos {
     padding-top: 15px;
     height: 75px;
     background-color: #1b1b1b;
@@ -47,6 +48,11 @@ h3 {
 /*carousel*/
 .c-item {
     height: 480px;
+}
+
+#servicos-carousel {
+    width: 30%;
+    border: 1px solid white
 }
 
 .c-img {
@@ -60,3 +66,5 @@ h3 {
     background-color: #1b1b1b;
     color: white;
 }
+
+
